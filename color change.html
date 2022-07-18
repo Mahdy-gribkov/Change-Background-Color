@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Color!</title>
+</head>
+<body>
+    <h1> Change Background Color Via Text</h1>
+    <input type="text" id="colorInputText">
+    <input type="button" id="colorButton" value="Click to Change Color" onclick="changeColor()">
+
+
+    <script>
+        function changeColor(){
+            let color = document.getElementById('colorInputText').value;
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
